@@ -1,0 +1,30 @@
+
+[project]
+name = "self-improving-efms-jax"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy==2.0.2",
+  "matplotlib==3.10.0",
+  "pillow==11.3.0",
+  "mediapy==1.2.6",
+  "moviepy==2.2.1",
+  "dm-env==1.6",
+  "dm-haiku==0.0.16",
+  "jax==0.7.2",
+  "jaxlib==0.7.2",
+  "optax==0.2.7",
+  "tensorflow==2.19.0",
+  "tfp-nightly==0.26.0.dev20260312",
+]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/web/simple/"
+
+[[tool.uv.index]]
+name = "ustc"
+url = "https://mirrors.ustc.edu.cn/pypi/simple"
